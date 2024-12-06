@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Create Product</title>
+</head>
+<body>
+    <header class="bg-green-600 flex justify-between items-center p-5">
+        <p>logo</p>
+        <div class="flex gap-5">
+            <a href="index.html">Нүүр</a>
+            <a href="product.html">Бүтээгдэхүүн нэмэх</a>
+            <a href="basket.html">Сагс</a>
+        </div>
+    </header>
+    <div class="flex place-content-center flex-col card rounded bg-slate-500 p-5 m-10">
+        <div class="mb-3 flex place-content-center justify-between">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Гарчиг бич!" class="border-black">
+        </div>
+        <div class="mb-3 flex place-content-center justify-between">
+            <label for="intro">Introduction</label>
+            <textarea id="intro" rows="3"></textarea>
+        </div>
+        <div class="mb-3 flex place-content-center justify-between">
+            <label for="price">Price</label>
+            <input type="number" id="price" placeholder="Үнэ">
+        </div>
+        <div class="mb-3 flex place-content-center justify-between">
+            <label for="image">Image URL</label>
+            <input type="text" id="image" placeholder="Enter image URL">
+        </div>
+        <div class="flex items-center justify-around">
+            <button id="create" class="bg-white px-3 rounded border-black">Үүсгэх</button>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
